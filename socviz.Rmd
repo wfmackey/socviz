@@ -88,7 +88,7 @@ p + geom_smooth(method = lm) +
 
 p + geom_smooth(method = "lm") + 
     geom_point() +
-    scale_x_log10(labels = scales::dollar) +
+    scale_x_log10(labels = scales::dollar)
     
 grattan_dollar(10)
 
