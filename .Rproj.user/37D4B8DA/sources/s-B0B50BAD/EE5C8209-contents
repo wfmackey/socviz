@@ -1,0 +1,34 @@
+---
+title: "Exploring ggplot"
+author: "Will Mackey"
+date: "19/12/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(ggplot2)
+```
+
+## Exploring field of education choices over time.
+
+
+
+```{r cars, echo=FALSE}
+library(tidyverse)
+library(ggplot2)
+```
+
+## Including Plots
+
+
+```{r load, echo=FALSE}
+data <- read_csv("foe_load_all.csv")
+
+ggplot(data=data, aes(x=refyear, y=foe_grattan, group=foe_grattan, color=foe_grattan)) +
+    geom_line() +
+    geom_point()
+
+```
+

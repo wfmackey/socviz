@@ -1,0 +1,6 @@
+"0","ggplot(data=data, aes(x=refyear, y=foe_grattan, group=foe, color=sex)) +
+    geom_line() +
+    geom_point()
+"
+"2","Error in FUN(X[[i]], ...) : object 'sex' not found
+"
